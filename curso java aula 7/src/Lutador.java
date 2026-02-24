@@ -75,4 +75,16 @@ public class Lutador {
         System.out.println("EMPATES: " + this.getEmpates());
         System.out.println("------------------------------ ");
     }
+
+    public void ganharLuta() {
+        this.setVitorias(this.getVitorias() + 1);
+    }
+
+    public void perderLuta() {
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+
+    public void empatarLuta() {
+        this.setEmpates(this.getEmpates() + 1);
+    }
 }
