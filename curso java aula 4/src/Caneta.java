@@ -1,7 +1,12 @@
 public class Caneta {
-    public String modelo;
+    private String modelo;
     private float ponta;
 
+
+    public  Caneta(String m, float p){
+        this.modelo = m;
+        this.ponta = p;
+    }
 
     public String getModelo(){
         return this.modelo;
