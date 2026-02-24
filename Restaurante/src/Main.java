@@ -11,7 +11,7 @@ public class Main {
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         List<Comida> listaDePedidos = new ArrayList<>();
 
-        System.out.println("--- Cadastro de Cliente ---");
+        System.out.println("--- Cadastro de Cliente teste---");
         System.out.print("Primeiro nome teste: ");
         String nome = leitor.nextLine();
         System.out.print("Nome do meio: ");
