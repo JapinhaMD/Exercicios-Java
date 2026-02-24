@@ -7,5 +7,8 @@ public class Main {
         //c1.setModelo("IC"); //OBS: SE UTILIZAR O CONSTRUTOR E EM BAIXO UTILIZAR O SETTER, O VALOR DO ATRIBUTO MODELO VAI SER ALTERADO PARA "IC"
         //c1.setPonta(0.5f);  //OBS: SE UTILIZAR O CONSTRUTOR E EM BAIXO UTILIZAR O SETTER, O VALOR DO ATRIBUTO PONTA VAI SER ALTERADO PARA 0.5f
         c1.status();
+
+        Caneta c2 = new Caneta("Faber-Castell", 0.7f);
+        c2.status();
         }
     }
