@@ -67,6 +67,32 @@ public class Main {
             l.apresentar();
         }
 
+
+        boolean aprovada = true;
+
+        Lutador l1 = listaDeLutador.get(0);
+        Lutador l2 = listaDeLutador.get(1);
+
+        if (l1.getCategoria().equals(l2.getCategoria()) && l1 != l2) {
+            System.out.println("Luta aprovada!");
+            aprovada = true;
+        } else {
+            System.out.println("Luta não aprovada.");
+            aprovada = false;
+        }
+
+        Luta luta = new Luta(l1, l2,5, aprovada);
+        luta.lutar();
+
+
+
+        System.out.println("\n======= STATUS APOS LUTA =======");
+
+        // Percorre a lista e chama o método apresentar de cada lutador
+        for (Lutador l : listaDeLutador) {
+            l.apresentar();
+        }
+
         System.out.println("Encerrando o programa...");
         leitor.close();
     }
