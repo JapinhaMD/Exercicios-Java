@@ -21,7 +21,7 @@ public class Main {
                 }
 
                 if (valorSaque.compareTo(BigDecimal.ZERO) < 0) {
-                    System.out.println(" Erro: O valor deve ser positivo.");
+                    Menu.erroNegativo();
                     continue;
                 }
 

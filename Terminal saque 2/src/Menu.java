@@ -21,4 +21,9 @@ public class Menu {
         System.out.println("\nEncerrando sistema... Obrigado!");
         System.out.println(linha);
     }
+
+    public static void erroNegativo() {
+        System.out.println(" Erro: O valor deve ser positivo.");
+
+    }
 }
