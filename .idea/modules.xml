@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Agencia Bancaria/Agencia Bancaria.iml" filepath="$PROJECT_DIR$/Agencia Bancaria/Agencia Bancaria.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Exercicios-Java.iml" filepath="$PROJECT_DIR$/.idea/Exercicios-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Restaurante/Restaurante.iml" filepath="$PROJECT_DIR$/Restaurante/Restaurante.iml" />
       <module fileurl="file://$PROJECT_DIR$/Terminal saque 1/Terminal saque.iml" filepath="$PROJECT_DIR$/Terminal saque 1/Terminal saque.iml" />
