@@ -19,20 +19,18 @@ import java.util.Scanner;
 
                 System.out.println("Retorno esperado:");
 
-                int count200= 0;
-                int count100 = 0;
-                int count50 = 0;
-                int count20 = 0;
-                int count10 = 0;
-                int count5 = 0;
-                int count2 = 0;
 
-                int moeda1 = 0;
-                int moeda50 = 0;
-                int moeda25 = 0;
-                int moeda10 = 0;
-                int moeda5 = 0;
-                int moeda1cent = 0;
+                //Contador para ver quantas notas ou moedas sao necessarias para o valor informado
+                // Zerar o contador antes de cada loop para evitar que o valor do contador acumule
+                int count= 0;
+
+                while (valorInformado.compareTo(BigDecimal.valueOf(200)) >= 0) {
+                    valorInformado = valorInformado.subtract(BigDecimal.valueOf(200));
+                    count++;
+                }
+                if (count > 0) {
+                    System.out.println(count + " " + nomes[0]);
+
 
 
 
