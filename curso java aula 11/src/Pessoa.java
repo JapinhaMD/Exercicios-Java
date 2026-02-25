@@ -1,7 +1,10 @@
+// Classes abstratas são classes que não podem ser instanciadas, ou seja, não podem criar objetos diretamente
+//Elas servem como base para outras classes, que podem herdar seus atributos e métodos.
+
 public abstract class Pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
+    protected String nome;
+    protected int idade;
+    protected String sexo;
 
     public Pessoa (String nome, int idade, String sexo) {
         this.nome = nome;
