@@ -5,23 +5,34 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        boolean continuar = true;
 
-        Menu.exibirBoasVindas();
+        while (continuar) {
+            Menu.exibirBoasVindas();
 
-        try {
-            BigDecimal valorSaque = scanner.nextBigDecimal();
+            try {
+                BigDecimal valorSaque = scanner.nextBigDecimal();
 
-            Menu.exibirResultado(valorSaque.doubleValue());
+                // Critério de parada
+                if (valorSaque.compareTo(BigDecimal.ZERO) == 0) {
+                    continuar = false;
+                    Menu.exibirFinalizacao();
+                    continue;
+                }
 
-            Dinheiro dinheiro = new Dinheiro(valorSaque);
-            dinheiro.calcularDistribuicao();
+                if (valorSaque.compareTo(BigDecimal.ZERO) < 0) {
+                    System.out.println(" Erro: O valor deve ser positivo.");
+                    continue;
+                }
 
-            Menu.exibirDespedida();
+                Dinheiro caixa = new Dinheiro(valorSaque);
+                caixa.calcularDistribuicaoComEstoque();
 
-        } catch (Exception e) {
-            Menu.exibirErroValorInvalido();
-        } finally {
-            scanner.close();
+            } catch (Exception e) {
+                Menu.exibirValorInvalido();
+                scanner.nextLine(); // Limpa o buffer do scanner
+            }
         }
+        scanner.close();
     }
 }
